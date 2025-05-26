@@ -99,8 +99,8 @@ const imagineCommand = require('./commands/imagine');
 // Global settings
 global.packname = settings.packname;
 global.author = settings.author;
-global.channelLink = "https://whatsapp.com/channel/0029Va90zAnIHphOuO8Msp3A";
-global.ytch = "Mr Unique Hacker";
+global.channelLink = "https://www.youtube.com/@lil_while";
+global.ytch = "RelaskYT";
 
 // Add this near the top of main.js with other global configurations
 const channelInfo = {
@@ -156,7 +156,7 @@ async function handleMessages(sock, messageUpdate, printLog) {
             // Only respond occasionally to avoid spam
             if (Math.random() < 0.1) {
                 await sock.sendMessage(chatId, {
-                    text: '❌ You are banned from using the bot. Contact an admin to get unbanned.',
+                    text: '❌ You are banned from using the bot. Contact an Kami to get unbanned.',
                     ...channelInfo
                 });
             }
@@ -241,7 +241,7 @@ async function handleMessages(sock, messageUpdate, printLog) {
             // Check if message is from owner (fromMe) or bot itself
             if (!message.key.fromMe) {
                 await sock.sendMessage(chatId, {
-                    text: '❌ This command is only available for the owner!',
+                    text: '❌ This command is only available for Kami!',
                     ...channelInfo
                 });
                 return;
